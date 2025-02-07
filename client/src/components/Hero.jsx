@@ -16,6 +16,7 @@ export const Hero = () => {
         </p>
         <div className="start-btn mx-auto w-fit pt-12 ">
           <MainButton content={"Get your plan"} padding="14px 48px" />
+          <h1>hello</h1>
         </div>
       </div>
     </div>
