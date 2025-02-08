@@ -1,8 +1,12 @@
 import React from 'react'
 import { MainButton } from './MainButton';
-
+import { Navbar } from './Navbar';
+import { useNavigate } from 'react-router-dom';
 export const Hero = () => {
+  const navigate = useNavigate()
   return (
+    <>
+    <Navbar />
     <div className="relative bg-[url('./assets/images/main.jpg')] bg-cover bg-center min-h-screen w-full"
     style={{ minHeight: 'calc(100vh - 80px)'}}>
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
@@ -15,9 +19,10 @@ export const Hero = () => {
           advanced AI technology. Stay on track, push your limits.
         </p>
         <div className="start-btn mx-auto w-fit pt-12 ">
-          <MainButton content={"Get your plan"} padding="14px 48px" />
+          <MainButton content={"Get your plan"} padding="14px 48px" onClick={() => navigate('/info')} />
         </div>
       </div> 
-    </div>
+      </div>
+    </>
   );
 }
