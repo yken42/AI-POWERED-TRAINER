@@ -17,7 +17,7 @@ export const Hero = () => {
         <div className="start-btn mx-auto w-fit pt-12 ">
           <MainButton content={"Get your plan"} padding="14px 48px" />
         </div>
-      </div>  
+      </div> 
     </div>
   );
 }
